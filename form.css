@@ -1,0 +1,8 @@
+.form-control.success input {
+    border-color: green;
+}
+
+.form-control.error input {
+    border-color: red;
+    ;
+}

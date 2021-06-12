@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Valid</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Small Demo Form</h1>
+        <br>
+        <form action="#" class="bg-light" onsubmit="return validation()">
+            <div class="form-group">
+
+                <label>Username:</label>
+                <input type="text" class="form-control" id="user" name="user" autocomplete="off">
+                <span id="username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label>Password:</label>
+                <input type="password" class="form-control success" id="password" autocomplete="off">
+                <span id="pass" class="text-success font-weight-bold"> </span>
+            </div>
+            <div class="form-group">
+                <label> Confirm Password:</label>
+                <input type="password" class="form-control error" id="confirmPassword" autocomplete="off">
+                <span id="confirmPass" class="text-success font-weight-bold"> </span>
+            </div>
+            <div class="form-group">
+                <label>Email Id:</label>
+                <input type="email" class="form-control" id="emailid" autocomplete="off">
+                <span id="email" class="text-success font-weight-bold"> </span>
+            </div>
+            <div class="form-group">
+                <label>Mobile Number</label>
+                <input type="text" class="form-control" id="mobileNum" autocomplete="off">
+                <span id="mobileNo" class="text-success font-weight-bold"> </span>
+
+            </div>
+
+            <input type="submit" name="submit" class="btn btn-success" autocomplete="off"></input>
+        </form>
+    </div>
+    <!-- <script type="text/javascript">
+        function validation() {
+            var username = document.getElementById('username').value;
+            let pass = document.getElementById('pass').value;
+            let confirmPass = document.getElementById('confirmPass').value;
+            let email = document.getElementById('email').value;
+            let MobileNo = document.getElementById('mobileNo').value;
+            if (username == "") {
+                document.getElementById('username').innerHTML = "*** Please fill the username field.";
+                return false;
+            }
+
+            if (pass == "") {
+                document.getElementById('password').innerHTML = "*** Please fill the this field.";
+                return false;
+            }
+
+            if (confirmPass == "") {
+                document.getElementById('confirmPass').innerHTML = "*** Please fill the this field.";
+                return false;
+            }
+
+            if (email == "") {
+                document.getElementById('email').innerHTML = "*** Please fill the this field.";
+                return false;
+            }
+
+            if (MobileNo == "") {
+                document.getElementById('MobileNo').innerHTML = "*** Please fill the this field.";
+                return false;
+            }
+        }
+    </script> -->
+
+
+
+
+
+    <script src="validForm.js"></script>
+</body>
+
+</html>
